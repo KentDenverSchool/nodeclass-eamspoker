@@ -32,6 +32,36 @@ public class Node<T> {
         this.front = front;
     }
 
+    //accessor: returns the value of the data
+    public T getData(){
+        return this.data;
+    }
+
+    //accessor: returns the item in front of the data
+    public Node getFront(){
+        return this.front;
+    }
+
+    //accessor: returns the item behind the data
+    public Node getBehind(){
+        return this.back;
+    }
+
+    //mutator: initialize data to given value
+    public void setData(T data){
+        this.data = data;
+    }
+
+    //mutator: initialize front to given Node
+    public void setFront(Node front){
+        this.front = front;
+    }
+
+    //mutator: initialize data to given value
+    public void setBehind(Node back){
+        this.back = back;
+    }
+
 
 
 

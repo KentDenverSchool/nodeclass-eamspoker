@@ -36,7 +36,7 @@ public class NodeDriver {
                 log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " + n1.getBehind());
 
                 log.add("Expected: data will be equal to n3 but not to n2");
-                log.add("n1 and n3 equal? " + n1.equals(n3) + " n2 and n3 equal? " + n1.equals(n2));
+                log.add("n1 and n3 equal? " + n1.equals(n3) + " n1 and n3 equal? " + n1.equals(n2));
 
 
             Path filePath = Paths.get("log.txt");

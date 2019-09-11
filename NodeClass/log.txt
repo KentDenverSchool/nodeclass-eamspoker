@@ -7,4 +7,4 @@ Node: Node: n1 Data: n1 Front: Node: n3 Behind: Node: n2
 Expected: data will be n3
 Node: Node: n3 Data: n3 Front: Node: n3 Behind: Node: n2
 Expected: data will be equal to n3 but not to n2
-n1 and n3 equal? true n2 and n3 equal? false
+n1 and n3 equal? true n1 and n3 equal? false

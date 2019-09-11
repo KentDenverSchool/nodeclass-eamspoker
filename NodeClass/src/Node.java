@@ -1,3 +1,10 @@
+/*
+ * Node.java
+ * This program creates a node class with data, front, and behind values that can be accessed and mutated. Includes
+ * an override of toString and .equals.
+ * Date: 9/11/19
+ * On my honor: EA
+ */
 public class Node<T> {
     //T as in type
     private T data;
@@ -57,12 +64,20 @@ public class Node<T> {
         this.front = front;
     }
 
-    //mutator: initialize data to given value
+    //mutator: initialize back to given value
     public void setBehind(Node back){
         this.back = back;
     }
 
+    //toString override, returns a string with the value of the node in it
+    public String toString(){
+        return "Node: " + data;
+    }
 
+    //returns the result of using .equals on the respective data of each object
+    public boolean equals(Node other){
+        return other.getData().equals(this.data);
+    }
 
 
 

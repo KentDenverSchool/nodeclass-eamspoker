@@ -8,3 +8,5 @@ Expected: data will be n3
 Node: Node: n3 Data: n3 Front: Node: n3 Behind: Node: n2
 Expected: data will be equal to n3 but not to n2
 n1 and n3 equal? true n1 and n3 equal? false
+Expected: everything in n4 will be null because of empty constructor
+Node: Node: null Data: null Front: null Behind: null

@@ -20,6 +20,8 @@ public class NodeDriver {
         Node<String> n1 = new Node<String>("n1");
         Node<String> n3 = new Node<String>("n3", n1, true );
         Node<String> n2 = new Node<String>("n2",n1, n3);
+        Node<String> n4 = new Node<String>();
+
 
             //test accessors and mutators, to string and .equals
             ArrayList<String> log = new ArrayList<>();
@@ -37,6 +39,11 @@ public class NodeDriver {
 
                 log.add("Expected: data will be equal to n3 but not to n2");
                 log.add("n1 and n3 equal? " + n1.equals(n3) + " n1 and n3 equal? " + n1.equals(n2));
+
+                log.add("Expected: everything in n4 will be null because of empty constructor");
+                log.add("Node: " + n4 + " Data: " + n4.getData() + " Front: " + n4.getFront() + " Behind: " + n4.getBehind());
+
+
 
 
             Path filePath = Paths.get("log.txt");

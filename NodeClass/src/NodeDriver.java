@@ -13,7 +13,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//pretty much everything looks good. Good job using Files too.
 public class NodeDriver {
     public static void main(String[] args){
         //all constructors tested
@@ -24,6 +24,7 @@ public class NodeDriver {
 
 
             //test accessors and mutators, to string and .equals
+            //FIXME: make sure your lines are not more than 100 characters long 
             ArrayList<String> log = new ArrayList<>();
                 log.add("Expected: Node n1 with data value \"n1\", front is null, behind is null");
                 log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " + n1.getBehind());
@@ -45,7 +46,7 @@ public class NodeDriver {
 
 
 
-
+               
             Path filePath = Paths.get("log.txt");
             try {
                 Files.createFile(filePath);

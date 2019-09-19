@@ -24,25 +24,29 @@ public class NodeDriver {
 
 
             //test accessors and mutators, to string and .equals
-            //FIXME: make sure your lines are not more than 100 characters long 
             ArrayList<String> log = new ArrayList<>();
                 log.add("Expected: Node n1 with data value \"n1\", front is null, behind is null");
-                log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " + n1.getBehind());
+                log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " +
+                        n1.getBehind());
                 n1.setBehind(n2);
                 log.add("Expected: behind will be n2");
-                log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " + n1.getBehind());
+                log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " +
+                        n1.getBehind());
                 n1.setFront(n3);
                 log.add("Expected: front will be n3");
-                log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " + n1.getBehind());
+                log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " +
+                        n1.getBehind());
                 n1.setData("n3");
                 log.add("Expected: data will be n3");
-                log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " + n1.getBehind());
+                log.add("Node: " + n1 + " Data: " + n1.getData() + " Front: " + n1.getFront() + " Behind: " +
+                        n1.getBehind());
 
                 log.add("Expected: data will be equal to n3 but not to n2");
                 log.add("n1 and n3 equal? " + n1.equals(n3) + " n1 and n3 equal? " + n1.equals(n2));
 
                 log.add("Expected: everything in n4 will be null because of empty constructor");
-                log.add("Node: " + n4 + " Data: " + n4.getData() + " Front: " + n4.getFront() + " Behind: " + n4.getBehind());
+                log.add("Node: " + n4 + " Data: " + n4.getData() + " Front: " + n4.getFront() + " Behind: " +
+                        n4.getBehind());
 
 
 

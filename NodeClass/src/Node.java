@@ -78,7 +78,7 @@ public class Node<T> {
 
     //returns the result of using .equals on the respective data of each object
     public boolean equals(Object other){
-        if(other instanceof Node) {
+        if(other instanceof Node){
             return ((Node)other).getData().equals(this.data);
         } else {
             return false;
